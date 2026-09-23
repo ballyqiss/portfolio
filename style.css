@@ -469,3 +469,120 @@ h2 {
         padding: 0 10px;
     }
 }
+
+/*Project-data-1*/
+.project-title {
+  font-size: 1.5rem;
+  color: #075aaa;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.section-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #f8f9fa;
+  padding-bottom: 4px;
+}
+
+.media-placeholder {
+  background-color: #f8f9fa;
+  border: 2px dashed #ced4da;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  color: #6c757d;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/*Project-data-2*/
+/* Project Container Styles */
+.project-card {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+}
+
+.project-header h1 {
+  font-size: 1.8rem;
+  color: #0a2540;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e6ebf1;
+  padding-bottom: 10px;
+}
+
+.project-block {
+  margin-bottom: 25px;
+}
+
+.project-block h3 {
+  font-size: 1.25rem;
+  color: #0a2540;
+  margin-bottom: 10px;
+}
+
+.project-block h4 {
+  font-size: 1.05rem;
+  color: #20639b;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.project-block p, 
+.project-block li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #4f566b;
+}
+
+.project-block ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.project-block li {
+  margin-bottom: 8px;
+}
+
+/* Visual / Chart Container */
+.project-visual {
+  text-align: center;
+  margin: 25px 0;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #e3e8ee;
+  border-radius: 6px;
+}
+
+.chart-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-caption {
+  font-size: 0.85rem;
+  color: #697386;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+code {
+  background-color: #f1f3f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+  font-size: 0.9em;
+  color: #d63384;
+}

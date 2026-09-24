@@ -108,14 +108,53 @@ h2 {
     transition: var(--transition);
 }
 
+/* 1. Center the parent container and allow horizontal row wrapping */
+.cta-buttons {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 580px !important;  /* Constrains entire button block to tagline width */
+  margin: 40px auto 0 auto !important;
+}
+
+/* 2. Top two buttons take 100% width so they stack on top */
+.primary, 
+.secondary {
+  flex: 1 1 100% !important;
+  width: 100% !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* 3. Bottom two buttons sit side-by-side automatically */
+.btn-linkedin,
+.btn-email {
+  flex: 0 1 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.primary, 
+.secondary {
+  display: block;             /* Makes max-width and auto margins apply properly */
+  width: 100%;                /* Allows flexible scaling */
+  max-width: 580px;           /* Matches the length of the tagline above */
+  margin: 12px auto;          /* Centers the buttons horizontally */
+  box-sizing: border-box;     /* Prevents padding from breaking width */
+}
+
 .primary {
-    background-color: var(--white);
-    color: var(--primary-blue);
+  background-color: var(--white);
+  color: var(--primary-blue);
 }
 
 .secondary {
-    border: 2px solid var(--white);
-    color: var(--white);
+  border: 2px solid var(--white);
+  color: var(--white);
 }
 
 .btn:hover {
@@ -129,17 +168,6 @@ h2 {
 }
 
 
-/* Availability Pill */
-.status-pill {
-    display: inline-block;
-    padding: 8px 20px;
-    background: #e1f5fe;
-    color: #01579b;
-    border-radius: 50px;
-    font-weight: bold;
-    margin: 20px 0;
-    border: 1px solid #01579b;
-}
 
 /* LinkedIn & e-mail Buttons */
 .btn-linkedin,.btn-email {
